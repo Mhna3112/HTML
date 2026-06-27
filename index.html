@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Web Development</title>
+    <title>Học Lập Trình Web</title>
 
     <style>
         body {
@@ -25,7 +25,7 @@
 
         main {
             background: white;
-            max-width: 800px;
+            max-width: 900px;
             margin: 30px auto;
             padding: 25px;
             border-radius: 12px;
@@ -48,6 +48,10 @@
             transform: translateX(5px);
         }
 
+        h2{
+            color:#2c3e50;
+        }
+
         footer {
             text-align: center;
             margin-top: 20px;
@@ -62,11 +66,18 @@
             text-decoration: none;
             border-radius: 8px;
             font-weight: bold;
-            transition: 0.2s;
         }
 
         footer a:hover {
             background: #2980b9;
+        }
+
+        .question{
+            margin-top:25px;
+            padding:15px;
+            background:#f7f9fc;
+            border-left:5px solid #3498db;
+            border-radius:8px;
         }
     </style>
 
@@ -75,46 +86,49 @@
 <body>
 
 <header>
-    <h1>hoc lap trinh web</h1>
+    <h1>HỌC LẬP TRÌNH WEB</h1>
 </header>
 
 <main>
 
     <ol type="I">
-        <li>Background Skills
+        <li>Kiến thức nền
             <ol type="A">
-                <li>Unix Commands</li>
-                <li>Vim Text Editor</li>
+                <li>Lệnh Unix</li>
+                <li>Trình soạn thảo Vim</li>
             </ol>
         </li>
 
         <li>HTML
             <ol type="A">
-                <li>Minimal Page</li>
-                <li>Headings</li>
-                <li>Tags</li>
-                <li>Lists
+                <li>Trang HTML tối thiểu</li>
+                <li>Thẻ tiêu đề (Heading)</li>
+                <li>Các thẻ HTML</li>
+                <li>Danh sách
                     <ol type="i">
-                        <li>Unordered</li>
-                        <li>Ordered</li>
-                        <li>Definition</li>
-                        <li>Nested</li>
+                        <li>Danh sách không thứ tự</li>
+                        <li>Danh sách có thứ tự</li>
+                        <li>Danh sách định nghĩa</li>
+                        <li>Danh sách lồng nhau</li>
                     </ol>
                 </li>
-                <li>Links
+
+                <li>Liên kết
                     <ol type="i">
-                        <li>Absolute</li>
-                        <li>Relative</li>
+                        <li>Liên kết tuyệt đối</li>
+                        <li>Liên kết tương đối</li>
                     </ol>
                 </li>
-                <li>Images</li>
+
+                <li>Hình ảnh</li>
             </ol>
         </li>
 
         <li>CSS
             <ol type="A">
-                <li>Anatomy</li>
-                <li>Basic Selectors
+                <li>Cấu trúc CSS</li>
+
+                <li>Bộ chọn cơ bản
                     <ol type="i">
                         <li>Element</li>
                         <li>Class</li>
@@ -122,30 +136,91 @@
                         <li>Group</li>
                     </ol>
                 </li>
-                <li>The DOM</li>
-                <li>Advanced Selectors</li>
-                <li>Box Model</li>
+
+                <li>DOM</li>
+                <li>Bộ chọn nâng cao</li>
+                <li>Mô hình hộp (Box Model)</li>
             </ol>
         </li>
 
-        <li>Programming
-            <ol type="A">
+        <li>Lập trình
+            <ol>
                 <li>Python</li>
                 <li>JavaScript</li>
             </ol>
         </li>
 
-        <li>Database
-            <ol type="A">
-                <li>Flat File</li>
-                <li>Relational</li>
+        <li>Cơ sở dữ liệu
+            <ol>
+                <li>Tệp phẳng (Flat File)</li>
+                <li>Cơ sở dữ liệu quan hệ</li>
             </ol>
         </li>
     </ol>
 
+    <hr>
+
+    <h2>Câu hỏi ôn tập</h2>
+
+    <div class="question">
+        <ol>
+
+            <li>Unix là gì? Nêu một số lệnh Unix thường dùng.</li>
+
+            <li>Vim là gì? Làm thế nào để lưu và thoát khỏi Vim?</li>
+
+            <li>HTML là viết tắt của cụm từ nào?</li>
+
+            <li>Một tài liệu HTML tối thiểu gồm những thẻ nào?</li>
+
+            <li>Chức năng của thẻ <code>&lt;head&gt;</code> là gì?</li>
+
+            <li>Chức năng của thẻ <code>&lt;body&gt;</code> là gì?</li>
+
+            <li>Có bao nhiêu cấp thẻ tiêu đề (Heading)?</li>
+
+            <li>Phân biệt thẻ <code>&lt;ol&gt;</code>, <code>&lt;ul&gt;</code> và <code>&lt;dl&gt;</code>.</li>
+
+            <li>Danh sách lồng nhau là gì?</li>
+
+            <li>Liên kết tuyệt đối khác liên kết tương đối ở điểm nào?</li>
+
+            <li>Thẻ nào dùng để chèn hình ảnh vào trang web?</li>
+
+            <li>Thuộc tính <code>src</code> của thẻ <code>&lt;img&gt;</code> dùng để làm gì?</li>
+
+            <li>CSS là viết tắt của cụm từ nào?</li>
+
+            <li>Cấu trúc của một quy tắc CSS gồm những thành phần nào?</li>
+
+            <li>Selector là gì?</li>
+
+            <li>Phân biệt Selector theo Element, Class và ID.</li>
+
+            <li>DOM là gì?</li>
+
+            <li>Box Model gồm những thành phần nào?</li>
+
+            <li>Padding khác Margin như thế nào?</li>
+
+            <li>JavaScript dùng để làm gì trong phát triển web?</li>
+
+            <li>Python có thể được sử dụng ở những vị trí nào trong lập trình web?</li>
+
+            <li>Cơ sở dữ liệu là gì?</li>
+
+            <li>Flat File và Relational Database khác nhau như thế nào?</li>
+
+            <li>Website tĩnh và Website động khác nhau ở điểm nào?</li>
+
+            <li>Muốn xây dựng một website hoàn chỉnh cần những công nghệ nào?</li>
+
+        </ol>
+    </div>
+
     <footer>
         <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">
-            HTML Reference
+            Tài liệu HTML
         </a>
     </footer>
 
@@ -153,4 +228,3 @@
 
 </body>
 </html>
-
